@@ -17,6 +17,7 @@ public class SecurityConfig {
                 csrf(customizer->customizer.disable())
                 .authorizeHttpRequests(request->request.anyRequest().authenticated())
                 .formLogin(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .build();
     }
