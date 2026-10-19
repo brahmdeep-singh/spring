@@ -27,7 +27,7 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
-    public Users(int id, String username, String password) {
+    public Users(Integer id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
