@@ -32,6 +32,7 @@ public class Users {
         this.username = username;
         this.password = password;
     }
+    public Users(){}
     @Override
     public String toString() {
         return "Users [id=" + id + ", username=" + username + ", password=" + password + "]";
